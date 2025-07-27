@@ -436,6 +436,10 @@ footer::before {
     margin: 20px 0;
 }
 
+.post-content p {
+    font-size: 0.5rem;
+}
+
 /* Syntax highlighting for code blocks */
 pre, code {
     background: var(--forest-green);
