@@ -1,11 +1,11 @@
 Gem::Specification.new do |spec|
   spec.name          = "bcc_theme"
   spec.version       = "0.1.0"
-  spec.authors       = ["Your Name"]
-  spec.email         = ["your-email@example.com"]
+  spec.authors       = ["Backyard Critter Crawls"]
+  spec.email         = ["backyardcrittercrawls@gmail.com"]
 
-  spec.summary       = "A beautiful nature-themed Jekyll theme with autumn colors and salamander mascot"
-  spec.homepage      = "https://github.com/yourusername/bcc_theme"
+  spec.summary       = "A nature-themed Jekyll theme for my blog"
+  spec.homepage      = "https://github.com/backyardcrittercrawls/bcc_theme"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_layouts|_includes|_sass|LICENSE|README)!i) }
