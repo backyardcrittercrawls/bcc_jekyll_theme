@@ -361,6 +361,12 @@ main {
     box-shadow: 0 15px 40px rgba(0,0,0,0.15);
 }
 
+.card h2 {
+    color: var(--forest-green);
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
 .card h3 {
     color: var(--forest-green);
     margin-bottom: 15px;
