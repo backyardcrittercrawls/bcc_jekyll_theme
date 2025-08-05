@@ -471,6 +471,13 @@ footer::before {
     margin-bottom: 0px;
 }
 
+.post-content a {
+    color: var(--warm-orange);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+
 /* Syntax highlighting for code blocks */
 pre, code {
     background: var(--forest-green);
@@ -484,4 +491,57 @@ pre {
     padding: 20px;
     overflow-x: auto;
     margin: 20px 0;
+}
+
+/* Footnote styling - hide arrows in reverse footnotes */
+.post-content .footnotes {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px solid var(--sage-green);
+}
+
+.post-content .footnotes ol {
+    list-style: none;
+    counter-reset: footnote-counter;
+}
+
+.post-content .footnotes li {
+    counter-increment: footnote-counter;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.post-content .footnotes li::before {
+    content: counter(footnote-counter);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    color: var(--warm-orange);
+}
+
+/* Hide arrows in reverse footnotes */
+.post-content .footnotes a[href^="#fnref"]::after,
+.post-content .footnotes a[href^="#fnref"]::before {
+    display: none !important;
+}
+
+.post-content .footnotes a[href^="#fnref"] {
+    text-decoration: none;
+    color: var(--warm-orange);
+    font-weight: bold;
+}
+
+/* Style footnote references in the main content */
+.post-content a[href^="#fn"] {
+    text-decoration: none;
+    color: var(--warm-orange);
+    font-weight: bold;
+    font-size: 0.8em;
+    vertical-align: super;
+}
+
+.post-content a[href^="#fn"]::after,
+.post-content a[href^="#fn"]::before {
+    display: none !important;
 } 
