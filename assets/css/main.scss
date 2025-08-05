@@ -471,7 +471,7 @@ footer::before {
     margin-bottom: 0px;
 }
 
-.post-content a {
+.post-content a.href {
     color: var(--warm-orange);
     text-decoration: none;
     transition: color 0.3s ease;
@@ -521,12 +521,12 @@ pre {
 }
 
 /* Hide arrows in reverse footnotes */
-.post-content .footnotes a[href^="#fnref"]::after,
-.post-content .footnotes a[href^="#fnref"]::before {
+.post-content a[href^="#fnref"]::after,
+.post-content a[href^="#fnref"]::before {
     display: none !important;
 }
 
-.post-content .footnotes a[href^="#fnref"] {
+.post-content a[href^="#fnref"] {
     text-decoration: none;
     color: var(--warm-orange);
     font-weight: bold;
