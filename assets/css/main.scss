@@ -531,11 +531,11 @@ pre {
 }
 
 
-.post-content a:href {
+.post-content a[href^="http"] {
     text-decoration: none;
     color: var(--burnt-orange);
 }
 
-.post-content a:href {
+.post-content a[href^="http"]:visited{
     color: var(--earth-brown);
 }
