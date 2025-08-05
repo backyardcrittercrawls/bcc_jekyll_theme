@@ -471,13 +471,6 @@ footer::before {
     margin-bottom: 0px;
 }
 
-.post-content a {
-    color: var(--warm-orange);
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-
 /* Syntax highlighting for code blocks */
 pre, code {
     background: var(--forest-green);
@@ -525,8 +518,6 @@ pre {
 .post-content a[href^="#fn"] {
     text-decoration: none;
     color: var(--warm-orange);
-    font-weight: bold;
-    font-size: 0.8em;
     vertical-align: super;
 }
 
