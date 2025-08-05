@@ -510,14 +510,14 @@ pre {
     position: absolute;
     left: 0;
     font-weight: bold;
-    color: var(--warm-orange);
+    color: var(--burnt-orange);
 }
 
 
 /* Style footnote references in the main content */
 .post-content a[href^="#fn"] {
     text-decoration: none;
-    color: var(--warm-orange);
+    color: var(--burnt-orange);
     vertical-align: super;
 }
 
@@ -531,11 +531,11 @@ pre {
 }
 
 
-.post-content a[href^="https://"] {
+.post-content a:href {
     text-decoration: none;
-    color: var(--warm-orange);
+    color: var(--burnt-orange);
 }
 
-.post-content a[href^="https://"]:visited{
+.post-content a:href {
     color: var(--earth-brown);
 }
