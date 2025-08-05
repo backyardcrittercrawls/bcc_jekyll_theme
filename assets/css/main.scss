@@ -471,7 +471,7 @@ footer::before {
     margin-bottom: 0px;
 }
 
-.post-content a.href {
+.post-content a {
     color: var(--warm-orange);
     text-decoration: none;
     transition: color 0.3s ease;
@@ -520,17 +520,6 @@ pre {
     color: var(--warm-orange);
 }
 
-/* Hide arrows in reverse footnotes */
-.post-content a[href^="#fnref"]::after,
-.post-content a[href^="#fnref"]::before {
-    display: none !important;
-}
-
-.post-content a[href^="#fnref"] {
-    text-decoration: none;
-    color: var(--warm-orange);
-    font-weight: bold;
-}
 
 /* Style footnote references in the main content */
 .post-content a[href^="#fn"] {
@@ -539,6 +528,10 @@ pre {
     font-weight: bold;
     font-size: 0.8em;
     vertical-align: super;
+}
+
+.post-content a[href^="#fn"]:visited{
+    color: var(--burnt-orange);
 }
 
 .post-content a[href^="#fn"]::after,
