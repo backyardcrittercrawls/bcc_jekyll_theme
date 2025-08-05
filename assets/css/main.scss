@@ -522,10 +522,20 @@ pre {
 }
 
 .post-content a[href^="#fn"]:visited{
-    color: var(--burnt-orange);
+    color: var(--earth-brown);
 }
 
 .post-content a[href^="#fn"]::after,
 .post-content a[href^="#fn"]::before {
     display: none !important;
-} 
+}
+
+
+.post-content a[href^="https://"] {
+    text-decoration: none;
+    color: var(--warm-orange);
+}
+
+.post-content a[href^="https://"]:visited{
+    color: var(--earth-brown);
+}
